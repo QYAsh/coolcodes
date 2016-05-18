@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml mode="jtbc" author="jetiben">
+  <configure>
+    <node>item</node>
+    <field>name,tpl_default</field>
+    <base>item_list</base>
+  </configure>
+  <item_list>
+    <item>
+      <name><![CDATA[index]]></name>
+      <tpl_default><![CDATA[{$=mm_web_head($GLOBALS['nhead'])}
+<div style="width: 888px; height: 380px; background:url(common/images/public/coolcodes_homepage.jpg)">
+      <div class="box1" style="width:400px; float:right; margin-top:50px;">
+        <center><h3 style="margin:30px">{$=ii_itake('global.passport:api.userlogin', 'lng')}</h3></center>
+        <div class="box1s" style="MARGIN: 30px 0px 30px 90px;">{$=ii_ireplace('global.passport:api.jslogin', 'tpl')}</div>
+      </div>
+</div>
+{$=mm_web_foot($GLOBALS['nfoot'])}]]></tpl_default>
+    </item>
+  </item_list>
+</xml>
