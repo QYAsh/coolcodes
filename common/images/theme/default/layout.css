@@ -68,7 +68,8 @@ A:hover {
   COLOR: #666666; TEXT-DECORATION: none
 }
 #topContent H2 A:hover {
-  COLOR: #333333; TEXT-DECORATION: none
+	COLOR: #333333;
+	TEXT-DECORATION: none;
 }
 #panel {
   POSITION: absolute; TOP: 20px; RIGHT: 10px
@@ -77,30 +78,50 @@ A:hover {
   COLOR: #999999
 }
 #menu {
-  WIDTH: 100%; HEIGHT: 27px; BACKGROUND: url(menu.bg.gif); BORDER-BOTTOM: #0096D4 2px solid
+  WIDTH: 100%; HEIGHT: 40px; BACKGROUND: #FFFFFF; BORDER-BOTTOM: #EEEEEE 2px solid; 
 }
+
+#logo {
+  WIDTH:111px; HEIGHT:26px; MARGIN-LEFT:20px;MARGIN-TOP:-1px;MARGIN-BOTTOM:-1px;
+  }
+
+#menu LI FORM{
+  MARGIN:0PX; PADDING:0px; MARGIN-LEFT:120px;MARGIN-TOP:-1px;MARGIN-BOTTOM:-1px;
+}
+
 #menu UL {
-  MARGIN: 0px; PADDING: 0px; PADDING-TOP: 1px; LIST-STYLE: none
+  MARGIN: 0px; PADDING: 0px; PADDING-TOP: 5px; LIST-STYLE: none 
 }
 #menu LI {
   DISPLAY: block; FLOAT: left; WHITE-SPACE: nowrap
 }
 #menu A {
-  DISPLAY: block; COLOR: #333333; FONT-WEIGHT: bold; TEXT-DECORATION: none; MARGIN-LEFT: 10px; LINE-HEIGHT: 26px; PADDING-LEFT: 6px; PADDING-RIGHT: 6px
+  DISPLAY: block; COLOR: #707070; FONT-WEIGHT: bold; TEXT-DECORATION: none; MARGIN-LEFT: 10px; LINE-HEIGHT: 26px; 
+  PADDING-LEFT: 6px; PADDING-RIGHT: 6px; PADDING-TOP:3px;
+  MARGIN-TOP: -1px; MARGIN-BOTTOM: -1px;
 }
 #menu A:hover {
   BACKGROUND: #0096D4; COLOR: #FFFFFF; TEXT-DECORATION: none
 }
 #middle {
-  WIDTH: 888px; BACKGROUND: url(bg.1.1.gif)
+  WIDTH: 888px; 
+  BACKGROUND:#FFFFFF;
+  HEIGHT:auto;
+  BACKGROUND: url(bg.1.1.gif)
 }
+
 #middleContent {
-  PADDING: 10px 10px 30px 10px; BACKGROUND: url(bg.1.2.gif) bottom center no-repeat
+  PADDING: 10px 10px 30px 10px; 
+  BACKGROUND: url(bg.1.1.gif);
+  BACKGROUND: url(bg.1.2.gif) bottom center no-repeat
 }
+
 #middleContent2 {
-  PADDING: 10px 10px 30px 10px; MARGIN-BOTTOM: -5px; BACKGROUND: url(bg.1.2.gif) bottom center no-repeat
+  PADDING: 10px 10px 30px 10px; MARGIN-BOTTOM: -5px; 
+  BACKGROUND: url(bg.1.2.gif) bottom center no-repeat
 }
 #bottom {
+
   WIDTH: 888px
 }
 #bottomContent {
@@ -128,7 +149,7 @@ A:hover {
   COLOR: #666666
 }
 .box1 {
-  WIDTH: 200px; MARGIN-BOTTOM: 10px; BACKGROUND: #F6F9FB; BORDER: #E1E1E1 1px solid
+  WIDTH: 200px; MARGIN-BOTTOM: 10px; BACKGROUND: #F6F9FB; BORDER: #E1E1E1 1px solid;
 }
 .box1 H3 {
   MARGIN: 10px; FONT-SIZE: 14px; FONT-WEIGHT: bold; COLOR: #9F9F9F
@@ -140,7 +161,7 @@ A:hover {
   MARGIN-TOP: 5px
 }
 .box1 DIV.box1s {
-  MARGIN: 10px; TEXT-ALIGN: center
+  TEXT-ALIGN: center;
 }
 .box2 {
   WIDTH: 100%
@@ -194,7 +215,7 @@ A:hover {
   HEIGHT: 1px; BACKGROUND: url(line.1.jpg)
 }
 .middleSide {
-  WIDTH: 200px; DISPLAY: inline; FLOAT: left
+WIDTH: 200px; DISPLAY: inline; FLOAT: left
 }
 .middleMain {
   WIDTH: 666px; DISPLAY: inline; FLOAT: left
@@ -268,3 +289,4 @@ A:hover {
 .ubb_quote {
   BORDER: #dcdcdc 1px dotted; PADDING: 5px; LINE-HEIGHT: 150%
 }
+

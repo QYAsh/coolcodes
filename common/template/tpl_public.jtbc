@@ -25,18 +25,29 @@
 <link type="text/css" rel="stylesheet" href="{$=#global_images_route}theme/{$=#nskin}/layout.css" />
 </head>
 <body>
+
 <div id="top">
-  <div id="topContent">
-    <h2><a href="{$=ii_get_actual_route("./")}">{$=ii_itake('global.module.web_title', 'lng')}</a></h2>
-    <div id="panel"><span class="hand" onclick="this.style.behavior='url(#default#homepage)'; this.sethomepage(document.location); return false;">{$=ii_itake('global.module.set_homepage', 'lng')}</span>&nbsp;&nbsp;<span class="hand" onclick="window.external.addfavorite (document.location,document.title); return false;">{$=ii_itake('global.module.add_favorite', 'lng')}</span></div>
+  
     <div id="menu">
       <ul>
+	<li><img id="logo" src="/coolcodes/common/images/public/title2.gif" /></li>
         <li><a href="{$=ii_get_actual_route('./')}">{$=ii_itake('global.lng_menu.homepage', 'lng')}</a></li>
         <li><a href="{$=ii_get_actual_route('article')}">{$=ii_itake('global.lng_menu.article', 'lng')}</a></li>
-        <li><a href="{$=ii_get_actual_route('product')}">{$=ii_itake('global.lng_menu.product', 'lng')}</a></li>
         <li><a href="{$=ii_get_actual_route('download')}">{$=ii_itake('global.lng_menu.download', 'lng')}</a></li>
-        <li><a href="{$=ii_get_actual_route('shop')}">{$=ii_itake('global.lng_menu.shop', 'lng')}</a></li>
         <li><a href="{$=ii_get_actual_route('forum')}">{$=ii_itake('global.lng_menu.forum', 'lng')}</a></li>
+<li>
+   <form method="get" name="search" action="search">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td height="35">{$=ii_itake('global.lng_config.keyword', 'lng')} <input type="text" name="keyword" size="15" class="text" /> <select name="genre" class="select">{$=mm_sel_genre($GLOBALS['variable']['search.nsearch_genre'], '')}</select> <select name="field" class="select">{$=ii_show_xmlinfo_select('global.search:sel_field.all', '', 'select')}</select> <input type="submit" value="{$=ii_itake('global.lng_config.search','lng')}" class="button" /></td>
+          </tr>
+          <tr>
+            <td height="10"></td>
+            <td></td>
+          </tr>
+        </table>
+    </form>
+</li>
       </ul>
     </div>
   </div>
